@@ -1,0 +1,57 @@
+body {
+    background: rgb(225, 212, 201);
+    position: relative;
+    width: 1440px;
+    flex-direction: column;
+    display: flex;
+    padding: 20px 0px 40px 0px;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 60px;
+    padding: 0 40px 0 40px;
+
+    .header-menu {
+        width: 1360px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+            color: rgb(64, 63, 61);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        .logo {
+            width: 100px;
+            height: 60px;
+        }
+
+        .nav {
+            position: static;
+            width: 1188px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 45px;
+        }
+
+        .coffee-menu {
+            height: 60px;
+            width: 72px;
+            display: flex;
+            flex-direction: row;
+
+        }
+    }
+}
