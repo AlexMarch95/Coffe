@@ -6,6 +6,24 @@ body {
     display: flex;
     padding: 20px 0px 40px 0px;
     margin: 0;
+    font-family: "Roboto", "Arial", sans-serif, Inter;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(225, 212, 201);
+    display: inline;
+
+
+}
+
+i {
+    color: rgb(176, 144, 122);
 }
 
 .container {
@@ -21,10 +39,10 @@ body {
         flex-direction: row;
         align-items: center;
 
-        p {
+        .nav-item {
             color: rgb(64, 63, 61);
             font-family: Inter;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 600;
             line-height: 150%;
             letter-spacing: 0%;
@@ -37,13 +55,18 @@ body {
         }
 
         .nav {
+            display: block;
             position: static;
             width: 1188px;
             height: 60px;
             display: flex;
             flex-direction: row;
+            // justify-content: space-between;
+            align-items: center;
             justify-content: center;
-            gap: 45px;
+            gap: 40px;
+            list-style-type: none;
+            padding-inline-start: 0;
         }
 
         .coffee-menu {
@@ -51,7 +74,74 @@ body {
             width: 72px;
             display: flex;
             flex-direction: row;
+            align-items: center;
 
+            p {
+                color: rgb(64, 63, 61);
+                font-family: Inter;
+                font-size: 17px;
+                font-weight: 600;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    width: 1440px;
+    height: 644px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 20px;
+
+    .container-hero {
+        position: static;
+        width: 1360px;
+        height: 644px;
+        border-radius: 40px;
+        background: url(/coffe-house/assets/img-hero.jpg);
+
+        .offer {
+            padding: 100px;
+
+            p {
+                margin: 50px 0 40px 0;
+                display: inline;
+                color: rgb(176, 144, 122);
+                line-height: 1.5;
+
+            }
+
+            .text-hero {
+                color: rgb(225, 212, 201);
+                display: flex;
+                line-height: 1.5;
+
+            }
+        }
+
+        .butt-menu {
+            position: static;
+            width: 200px;
+            height: 64px;
+            border: none;
+            border-radius: 100px;
+            background: rgb(225, 212, 201);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 78px 20px 78px;
+            color: rgb(64, 63, 61);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            cursor: pointer;
         }
     }
 }
