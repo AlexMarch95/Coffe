@@ -32,17 +32,7 @@ body {
     font-family: "Roboto", "Arial", sans-serif, Inter;
 }
 
-h1 {
-    font-family: Inter;
-    font-size: 75px;
-    font-weight: normal;
-    line-height: 100%;
-    text-align: left;
-    color: rgb(225, 212, 201);
-    display: inline;
-    letter-spacing: -0.8px;
 
-}
 
 i {
     color: rgb(176, 144, 122);
@@ -119,6 +109,18 @@ i {
     height: 644px;
     padding: 0px 40px 0px 40px;
     margin-top: 20px;
+
+    h1 {
+        font-family: Inter;
+        font-size: 75px;
+        font-weight: normal;
+        line-height: 100%;
+        text-align: left;
+        color: rgb(225, 212, 201);
+        display: inline;
+        letter-spacing: -0.8px;
+
+    }
 
     .container-hero {
         position: static;
@@ -257,7 +259,7 @@ i {
                     }
 
                     .bigger.up {
-                        margin-top: 25px;
+                        margin-top: 15px;
                     }
 
                     .text {
@@ -365,4 +367,78 @@ i {
             }
         }
     }
+}
+
+.mobaileApp {
+    margin-top: 100px;
+    width: 1440px;
+    height: 630px;
+
+    .container {
+        width: 1360px;
+        height: 630px;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            .offer {
+                width: 630px;
+                height: 342px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                h1 {
+                    font-family: Inter;
+                    font-size: 60px;
+                    font-weight: normal;
+                    line-height: 125%;
+                    letter-spacing: 1px;
+                    text-align: left;
+                    margin: 0;
+                }
+
+
+
+
+                .title {
+                    font-family: Inter;
+                    font-size: 60px;
+                    font-weight: normal;
+                    line-height: 125%;
+                    letter-spacing: 0%;
+                    text-align: left;
+
+                }
+
+                .text {
+                    color: rgb(64, 63, 61);
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+            }
+        }
+
+        .mobileScreens {
+            width: 630px;
+            height: 630px;
+        }
+    }
+
 }
