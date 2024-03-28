@@ -1,3 +1,22 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(64, 63, 61);
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   background: rgb(225, 212, 201);
   position: relative;
@@ -16,13 +35,13 @@ body {
 
 h1 {
   font-family: Inter;
-  font-size: 72px;
-  font-weight: 600;
+  font-size: 75px;
+  font-weight: normal;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: left;
   color: rgb(225, 212, 201);
   display: inline;
+  letter-spacing: -0.8px;
 }
 
 i {
@@ -57,6 +76,7 @@ i {
   line-height: 150%;
   letter-spacing: 0%;
   text-align: left;
+  font-weight: normal;
 }
 .container .header-menu .logo {
   width: 100px;
@@ -103,7 +123,6 @@ i {
   color: rgb(64, 63, 61);
   font-family: Inter;
   font-size: 17px;
-  font-weight: 600;
   line-height: 150%;
   letter-spacing: 0%;
   text-align: left;
@@ -121,23 +140,20 @@ i {
   width: 1360px;
   height: 644px;
   border-radius: 40px;
-  background: url(/coffe-house/assets/img-hero.jpg);
+  background-image: url(/coffe-house/assets/img-hero.jpg);
+  background-position: center center;
 }
 .hero .container-hero .offer {
   padding: 100px;
 }
-.hero .container-hero .offer p {
-  margin: 50px 0 40px 0;
-  display: inline;
-  color: rgb(176, 144, 122);
-  line-height: 1.5;
-}
 .hero .container-hero .offer .text-hero {
+  margin: 43px 0 40px 0;
   color: rgb(225, 212, 201);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 .hero .container-hero .butt-menu {
   position: static;
@@ -168,4 +184,220 @@ i {
   letter-spacing: 0%;
   text-align: center;
   cursor: pointer;
+}
+
+.favorite-coffee {
+  margin: 100px 0 100px 0;
+  position: static;
+  width: 1440px;
+  height: 799px;
+  padding: 0 40px 0 40px;
+}
+.favorite-coffee .favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.favorite-coffee .favorite h1 {
+  color: rgb(64, 63, 61);
+  margin: 0;
+  font-size: 70px;
+}
+.favorite-coffee .slider-container {
+  margin-top: 40px;
+  position: static;
+  width: 1360px;
+  height: 684px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.favorite-coffee .slider-container .button-left {
+  height: 640px;
+  width: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.favorite-coffee .slider-container .button-left img {
+  width: 60px;
+  height: 60px;
+}
+.favorite-coffee .slider-container .button-right {
+  height: 640px;
+  width: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.favorite-coffee .slider-container .button-right img {
+  width: 60px;
+  height: 60px;
+}
+.favorite-coffee .slider-container .slide {
+  position: static;
+  width: 1152px;
+  height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.favorite-coffee .slider-container .slide .content {
+  position: static;
+  width: 480px;
+  height: 640px;
+}
+.favorite-coffee .slider-container .slide .content .coffee-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  width: 480px;
+  height: 480px;
+}
+.favorite-coffee .slider-container .slide .content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.favorite-coffee .slider-container .slide .content .description .bigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: rgb(64, 63, 61);
+  font-family: Inter;
+  font-size: 24px;
+}
+.favorite-coffee .slider-container .slide .content .description .bigger.up {
+  margin-top: 25px;
+}
+.favorite-coffee .slider-container .slide .content .description .text {
+  color: rgb(64, 63, 61);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 16px 0 15px 0;
+  line-height: 25px;
+}
+
+.about {
+  position: static;
+  width: 1440px;
+  height: 1325px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px 0 40px;
+}
+.about .text-about {
+  position: static;
+  width: 1360px;
+  height: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .text-about h1 {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 125%;
+  text-align: left;
+  color: rgb(64, 63, 61);
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+.about .container-about {
+  margin-top: 40px;
+  position: static;
+  width: 1360px;
+  height: 1060px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+.about .container-about .left {
+  width: 660px;
+  height: 1060px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+}
+.about .container-about .left .img-1 {
+  background-image: url(/coffe-house/assets/img/img1.jpg);
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+  background-position: center center;
+}
+.about .container-about .left .img-2 {
+  width: 660px;
+  height: 430px;
+  background-image: url(/coffe-house/assets/img/img2.jpg);
+  border-radius: 20px;
+  background-position: center center;
+}
+.about .container-about .right {
+  width: 660px;
+  height: 1060px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+}
+.about .container-about .right .img-3 {
+  width: 660px;
+  height: 430px;
+  background-image: url(/coffe-house/assets/img/img3.jpg);
+  border-radius: 20px;
+  background-position: center center;
+}
+.about .container-about .right .img-4 {
+  background-image: url(/coffe-house/assets/img/img4.jpg);
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+  background-position: center center;
 }
